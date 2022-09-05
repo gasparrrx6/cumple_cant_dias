@@ -55,8 +55,6 @@ vector<string> diasSemana = {"domingo", "lunes",   "martes", "miercoles",
                              "jueves",  "viernes", "sabado"};
 
 void diasCumple::setDias() {
-  // vector<string> diasSemana = {"dom", "lun", "mar", "mie", "jue", "vie",
-  // "sab"};
   int countDias = primerDia;
   int general = 0;
   for (int i = 0; i <= edadActual; i++) {
@@ -81,8 +79,6 @@ void diasCumple::setDias() {
 vector<info> diasCumple::getDatos() { return contenido; }
 
 vector<cantDias> diasCumple::getCantDias(diasCumple persona) {
-  // vector<string> diasSemana = {"dom", "lun", "mar", "mie", "jue", "vie",
-  // "sab"};
   vector<cantDias> contDias(7);
   for (int i = 0; i <= 6; i++) {
     contDias[i].cant = 0;
